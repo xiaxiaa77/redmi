@@ -22,7 +22,7 @@ sed -i '/exit 0/i sed -i "s/services/system/g" /usr/lib/lua/luci/controller/cpuf
 #修正连接数（by ベ七秒鱼ベ）
 sed -i '/customized in this file/a net.netfilter.nf_conntrack_max=165535' package/base-files/files/etc/sysctl.conf
 
-#git clone https://github.com/kiddin9/openwrt-packages.git package/openwrt-packages
+git clone https://github.com/kiddin9/openwrt-packages.git package/openwrt-packages
 #git clone https://github.com/coolsnowwolf/luci.git package/luci
 
 # themes添加（svn co 命令意思：指定版本如https://github）
